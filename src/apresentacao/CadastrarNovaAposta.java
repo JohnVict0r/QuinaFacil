@@ -1949,7 +1949,18 @@ public class CadastrarNovaAposta extends javax.swing.JInternalFrame {
             JOptionPane.showMessageDialog(null, "Selecione um concurso!");
             return;
         }
-
+        
+        if(nomeApostador.getText().length() == 0){
+            JOptionPane.showMessageDialog(null, "Insira o nome do apostador!");
+            return;
+        }
+        
+        if(valorAposta.getText().length() == 0){
+            JOptionPane.showMessageDialog(null, "Insira o valor da aposta!");
+            return;
+        }
+        
+        
         int x = Integer.parseInt(qtdNumerosSelecionados.getText());
 
         if (x == 30) {
@@ -2572,7 +2583,12 @@ public class CadastrarNovaAposta extends javax.swing.JInternalFrame {
                 numeroDoBotao.setForeground(Color.BLACK);
                 numerosEscolhidos.setText(numerosEscolhidos.getText().replaceAll(numeroDoBotao.getText(), ""));
             }
-        } 
+        }
+        
+        if(quantidadeNumerosEscolhidos >= 30){
+            botaoRadio.setSelected(false);
+            JOptionPane.showMessageDialog(null, "Selecione apenas 30 números!");
+        }
     }
 
     private void carregarConcursos() {
