@@ -15,7 +15,7 @@ import jdk.nashorn.internal.scripts.JO;
 
 /**
  *
- * @author Breno-
+ * @author John-
  */
 public class CadastrarNovoConcurso extends javax.swing.JInternalFrame {
 
