@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 
 /**
  *
- * @author Breno-
+ * @author John-
  */
 public class Aposta {
     
