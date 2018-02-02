@@ -10,7 +10,7 @@ import javax.swing.JInternalFrame;
 
 /**
  *
- * @author John-
+ * @author Breno-
  */
 public class TelaPrincipal extends javax.swing.JFrame {
 
